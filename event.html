@@ -9,10 +9,68 @@
 	<link rel="stylesheet" href="/event.css">
 </head>
 <body>
+
+	<div class="overlay" id="divone">
+		<div class="wrapper">
+			<span><strong>Anmälan till hela helgen</strong><br/>
+				<em>Fyll i dina uppgifter här</em></span>
+			<a href="#" class="close">&times;</a>
+			<div class="content">
+				<div class="container-label">
+					<p>Vilka dagar vill du delta?</p><label>
+
+						<input type="checkbox" id="day" name="checkbox" value="day"> Hela helgen 
+						</label>
+					<label>
+					<input type="checkbox" id="day" name="checkbox" value="day"> fredag  
+					</label>
+
+					<label>
+						<input type="checkbox" id="day" name="checkbox" value="day"> Lördag 
+						</label>
+
+					<label>
+						<input type="checkbox" id="day" name="checkbox" value="day"> Söndag  
+						</label>
+
+					<form>
+					<label>Namn</label>
+					<input type="text" placeholder="Therese Sköld"></form>
+					<form>
+					<label>Adress</label>
+					<input type="text" placeholder="karlstadsvägen 23"></form>
+					<form>
+					<label>Postnummer</label>
+					<input type="text" placeholder="665 79"></form>
+					<form>
+					<label>Stad</label>
+					<input type="text" placeholder="Karlstad"></form>
+					<form>
+					<label>Telefonnummer</label>
+					<input type="text" placeholder="0786943170"></form>
+					<form>
+					<label>Mejladress</label>
+					<input type="text" placeholder="therese.skold@mejl.com"> </form>
+
+					<label>
+						<p>Välj mat alternativ</p>
+						<input type="radio" id="meat" name="checkbox" value="meat" checked> Kött </label>
+						<input type="radio" id="fish" name="checkbox" value="fish" checked> Fisk</label>
+						<input type="radio" id="veg" name="checkbox" value="veg" checked> Vegitarisk </label>
+						<br/>
+					
+
+					<label>Fyll i eventuella allergier</label><br/><br/>
+					<input type="text" placeholder="Gluten"> </form>
+				<button>Anmäl mig</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<header>
-		<img src="/imgs/ProTech-logo-black.png">
+		<a href="index.html"><img src="/imgs/ProTech-logo-black.png"></a>
 		<nav>
-			<a class="lightblue" href="/event.html">Event</a>
+			<a class="lightblue" href="event.html">Event</a>
 			<a class="bluegreen" href="http://">Utbildning</a>
 			<a class="blue" href="http://">Om oss</a>
 		</nav>
@@ -22,9 +80,9 @@
 
 	<div class="container">
 		<h1>Bättre Webb</h1>
-		<span>Karstads största konferens för frontendutveckling</span>
-		<h2>Program</h2>
-		<span>Fredag 9 december 2022</span>
+		<h2>Karstads största konferens för frontendutveckling</h2>
+		<h3>Program</h3>
+		<p>Fredag 9 december 2022</p>
 		<div class="container-day">
 			Frukostmingel 9.00 - 10.00
 			<div class="container-card"> <strong>10.00 - 11.30 Figma masterclass </strong>- Alla smarta tips på hur du kan bli en ninja i Figma</div><br>
@@ -33,35 +91,6 @@
 			<div class="friday-card4"> 15.00 - 16.00 Tjejer kodar kommer och berättar hur de arbetar med att locka mer tjejer in till techbranchen genom frontendutveckling.</div><br>
 		</div>
 
-
-		<div class="box">
-			<a href="#divone" class="button">Anmälan</a>
-</div>
-
-	<div class="overlay" id="divone">
-		<div class="wrapper">
-			<span><strong>Anmälan till fredag</strong><br/>
-				<em>Fyll i dina uppgifter här</em></span>
-			<a href="#" class="close">&times;</a>
-			<div class="content">
-				<div class="container-label">
-					<form>
-					<label>Namn</label>
-					<input type="text" placeholder="Therese"></form>
-					<form>
-					<label>Efternamn</label>
-					<input type="text" placeholder="Sköld"></form>
-					<form>
-					<label>Telefonnummer</label>
-					<input type="text" placeholder="0786943170"></form>
-					<form>
-					<label>Mejladress</label>
-					<input type="text" placeholder="therese.skold@mejl.com"> </form>
-				<button>Anmäl mig</button>
-				</div>
-			</div>
-		</div>
-	</div>
 
 		<p class="head-day">Lördag 10 december 2022</p>
 		<div class="container-day">
@@ -73,35 +102,6 @@
 			
 		</div>
 
-		<div class="box">
-			<a href="#divone" class="button">Anmälan</a>
-</div>
-
-	<div class="overlay" id="divone">
-		<div class="wrapper">
-			<span><strong>Anmälan till Lördag</strong><br/>
-				<em>Fyll i dina uppgifter här</em></span>
-			<a href="#" class="close">&times;</a>
-			<div class="content">
-				<div class="container-label">
-					<form>
-					<label>Namn</label>
-					<input type="text" placeholder="Therese"></form>
-					<form>
-					<label>Efternamn</label>
-					<input type="text" placeholder="Sköld"></form>
-					<form>
-					<label>Telefonnummer</label>
-					<input type="text" placeholder="0786943170"></form>
-					<form>
-					<label>Mejladress</label>
-					<input type="text" placeholder="therese.skold@mejl.com"> </form>
-				<button>Anmäl mig</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
 		<p class="head-day">Söndag 11 december 2022</p>
 		<div class="container-day">
 			<div class="sunday-card1">9.00 - 10.00 UX-designer Robert Oskarsson berättar hur han skapar de mest användarvänliga hemsidorna</div><br>
@@ -109,71 +109,19 @@
 			<div class="sunday-card3"> 13.15 Avslutning med Tävling och utvärdering av Konferensen samt en överraskning</div> <br>
 		</div>
 
-		<div class="box">
-			<a href="#divone" class="button">Anmälan</a>
-</div>
+		<div class="pricecontainer">
+			<h4>Prislista</h4>
 
-	<div class="overlay" id="divone">
-		<div class="wrapper">
-			<span><strong>Anmälan till söndagen</strong><br/>
-				<em>Fyll i dina uppgifter här</em></span>
-			<a href="#" class="close">&times;</a>
-			<div class="content">
-				<div class="container-label">
-					<form>
-					<label>Namn</label>
-					<input type="text" placeholder="Therese"></form>
-					<form>
-					<label>Efternamn</label>
-					<input type="text" placeholder="Sköld"></form>
-					<form>
-					<label>Telefonnummer</label>
-					<input type="text" placeholder="0786943170"></form>
-					<form>
-					<label>Mejladress</label>
-					<input type="text" placeholder="therese.skold@mejl.com"> </form>
-				<button>Anmäl mig</button>
-				</div>
-			</div>
-		</div>
-	</div>
-			
-		
-		
-
-		<div>
-			<h3>Prislista</h3>
-			<p>Hela helgen 1295kr <br> En dag 395kr <br> I priset ingår alla seminarier samt lunch och fika. <br> Anmäl dig till hela konferensen nedan.</p>
+			<p>Hela helgen: 1295kr <br> En dag: 395kr</p> 
+			<p class="pricecontainer__text"><em>I priset ingår alla seminarier samt lunch och fika.</em></p> <br> 
+			<p>Anmäl dig till konferensen nedan.</p>
 		</div> <br>
 
 		<div class="box">
 					<a href="#divone" class="button">Anmälan</a>
 		</div>
 
-			<div class="overlay" id="divone">
-				<div class="wrapper">
-					<span><strong>Anmälan till hela helgen</strong><br/>
-						<em>Fyll i dina uppgifter här</em></span>
-					<a href="#" class="close">&times;</a>
-					<div class="content">
-						<div class="container-label">
-							<form>
-							<label>Namn</label>
-							<input type="text" placeholder="Therese"></form>
-							<form>
-							<label>Efternamn</label>
-							<input type="text" placeholder="Sköld"></form>
-							<form>
-							<label>Telefonnummer</label>
-							<input type="text" placeholder="0786943170"></form>
-							<form>
-							<label>Mejladress</label>
-							<input type="text" placeholder="therese.skold@mejl.com"> </form>
-						<button>Anmäl mig</button>
-						</div>
-					</div>
-				</div>
-			</div>
+			
 	</div>
 
 </main>
