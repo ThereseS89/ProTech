@@ -20,7 +20,7 @@
 				<div class="container-label">
 					<p>Vilka dagar vill du delta?</p><label>
 
-						<input type="checkbox" id="day" name="checkbox" value="day"> Hela helgen 
+						<input type="checkbox" id="day" name="checkbox" value="day" required> Hela helgen 
 						</label>
 					<label>
 					<input type="checkbox" id="day" name="checkbox" value="day"> fredag  
@@ -36,22 +36,22 @@
 
 					<form action="#">
 					<label>Namn</label>
-					<input type="text" placeholder="Therese Sköld">
+					<input type="text" placeholder="Therese Sköld" required />
 					
 					<label>Adress</label>
-					<input type="text" placeholder="karlstadsvägen 23">
+					<input type="text" placeholder="karlstadsvägen 23" required>
 					
 					<label>Postnummer</label>
-					<input type="text" placeholder="665 79">
+					<input type="text" placeholder="665 79" required>
 
 					<label>Stad</label>
-					<input type="text" placeholder="Karlstad">
+					<input type="text" placeholder="Karlstad" required>
 					
 					<label>Telefonnummer</label>
-					<input type="text" placeholder="0786943170">
+					<input type="text" value="" placeholder="0786943170" minlength="8" maxlength="16" required />
 					
 					<label>Mejladress</label>
-					<input type="text" placeholder="therese.skold@mejl.com">
+					<input type="text" placeholder="therese.skold@mejl.com" required>
 
 					<label>
 						<p>Välj mat alternativ</p>
@@ -69,8 +69,10 @@
 		</div>
 	</div>
 	<header>
+		
 		<a href="index.html"><img src="/imgs/ProTech-logo-black.png"></a>
 		<nav>
+			<a class="lightgreen" href="index.html">Hem</a>
 			<a class="lightblue" href="event.html">Event</a>
 			<a class="bluegreen" href="http://">Utbildning</a>
 			<a class="blue" href="http://">Om oss</a>
@@ -134,22 +136,19 @@
 		<img src="/imgs/ProTech-logo-green.png" alt="Protechlogo">
 
 		<div class="footer-group1">
-			<p>Kontakta oss</p><br>
-			<div class="line1"></div>
+			<p>Kontakta oss</p>
+			<span class="line1"></span>
 
 			<p><strong>ProTech</strong><br>tingvallagatan 28 654 26 Karlstad <br>
 			070-475 69 54 &nbsp; <i class="fa-sharp fa-solid fa-phone"></i> &nbsp; contact@protech.se &nbsp;<i class="fa-solid fa-envelope"></i> </p>
 		</div>
 
-		<div class="footer-group2">
-			<p class="footer-qoute">“ Let's create techwonder with creativity fun and development”
-			</p>
-		</div>
 
 		<a href="#top" class="back-top"> Back to top</a>
 
 		<div class="footer-group3">
 			<ul>
+				<li><a href="">Hem</a></li>
 				<li><a href="">Om oss</a></li>
 				<li><a href="">Utbildning</a></li>
 				<li><a href="">Events</a></li>
@@ -157,9 +156,8 @@
 			</ul>
 		</div>
 
-		<div class="footer-group4">
-			<p>Följ oss</p>
-			<div class="line2"></div>
+		<div class="footer-group4"> 
+			<p>Följ oss</p> <span class="line2"></span>
 
 
 			<div class="socialmedia">
