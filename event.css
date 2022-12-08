@@ -1,6 +1,6 @@
 @font-face {
 	font-family: Familjen Grotesk;
-	src: url(/Fonts/Familjen_Grotesk/FamiljenGrotesk-VariableFont_wght.ttf);
+	src: url(/Fonts/Familjen_Grotesk/static/FamiljenGrotesk-Regular.ttf);
 }
 
 @font-face {
@@ -188,6 +188,7 @@ main {
 	flex-direction: column;
 	align-items: center;
 	color: black;
+	margin: 1em;
 }
 
 .container p {
@@ -215,21 +216,45 @@ main {
 	margin: 0px;
 	padding-top: 1em;
 	font-size: 24px;
+	text-align: center;
 }
 
 .container-day > * {
 	background-color: #B8DCDE;
-	width: 80vw;
 	border:#32797C 2px solid;
 	border-radius: 10px;
 	padding: 1em;
 	color:#32797C;
 }
 
+@media (min-width: 800px){
+
+	.container-day {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-template-rows: auto auto auto auto;
+	}
+
+	.container-day > * {
+		max-width: 20em;
+		min-height: 5em;
+	}
+
+
+
+}
+
 h4 {
 	text-align: center;
 	font-size: 24px;
 	margin: 0px;
+}
+
+.pricecontainer {
+	border: 2px solid #32797C;
+	border-radius: 10px;
+	padding: 1em;
+	background-color: #B8DCDE;
 }
 
 .pricecontainer p {
@@ -332,7 +357,6 @@ input[type=text] {
 
 button {
 	background-color: #B8DCDE;
-	border: #32797C 2px solid;
 	color: #32797C;
 	font-weight: bold;
 	border-radius: 10px;
@@ -344,7 +368,12 @@ button {
 	letter-spacing: 3px;
 	margin-left: 6em;
 	margin-top: 1em;
+	box-shadow: 0.1em 0.2em 0.2em #B8DCDE;
 
+}
+
+button:hover {
+	background-color: #9bd7db;
 }
 
 /* Footer*/
@@ -448,4 +477,10 @@ footer img {
 	font-size: 20px;
 	grid-column: 3;
 	grid-row: 3;
+}
+
+/* responsivitet */
+
+@media screen {
+	
 }
