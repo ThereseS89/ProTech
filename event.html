@@ -12,56 +12,73 @@
 
 	<div class="overlay" id="divone">
 		<div class="wrapper">
-			<span><strong>Anmälan till hela helgen</strong><br/>
-				<em>Fyll i dina uppgifter här</em></span>
+			<p><strong>Anmälan till hela helgen</strong><br/>
+				<em>Fyll i dina uppgifter här</em></p>
 			<a href="#" class="close">&times;</a>
 
 			<div class="content">
 				<div class="container-label">
-					<p>Vilka dagar vill du delta?</p><label>
-
-						<input type="checkbox" id="day" name="checkbox" value="day" required> Hela helgen 
-						</label>
-					<label>
-					<input type="checkbox" id="day" name="checkbox" value="day"> fredag  
-					</label>
-
-					<label>
-						<input type="checkbox" id="day" name="checkbox" value="day"> Lördag 
-						</label>
-
-					<label>
-						<input type="checkbox" id="day" name="checkbox" value="day"> Söndag  
-						</label>
+					<p>Vilka dagar vill du delta?</p>
+					<input type="radio" id="weekend" name="checkbox" value="weekend" checked> <label>Hela helgen </label>
+					<input type="radio" id="day" name="checkbox" value="day" checked> <label>Enstaka dag</label>
+					<br/>
+					
+					<p>Välj dagar</p>
+					<input type="checkbox" id="friday" name="friday"> <label for="friday">Fredag</label>  
+				
+					<input type="checkbox" id="saturday" name="saturday"> <label for="saturday"></label>Lördag 
+					
+					<input type="checkbox" id="sunday" name="checkbox"><label for="sunday">Söndag</label> <br><br>
+					
 
 					<form action="#">
-					<label>Namn</label>
+					<label>Namn*</label>
 					<input type="text" placeholder="Therese Sköld" required />
 					
-					<label>Adress</label>
+					<label>Adress*</label>
 					<input type="text" placeholder="karlstadsvägen 23" required>
 					
-					<label>Postnummer</label>
+					<label>Postnummer*</label>
 					<input type="text" placeholder="665 79" required>
 
-					<label>Stad</label>
+					<label>Stad*</label>
 					<input type="text" placeholder="Karlstad" required>
 					
-					<label>Telefonnummer</label>
+					<label>Telefonnummer*</label>
 					<input type="text" value="" placeholder="0786943170" minlength="8" maxlength="16" required />
 					
-					<label>Mejladress</label>
-					<input type="text" placeholder="therese.skold@mejl.com" required>
+					<label>Mejladress*</label>
+					<input type="text" placeholder="therese.skold@mejl.com" required><br><br>
 
-					<label>
-						<p>Välj mat alternativ</p>
-						<input type="radio" id="meat" name="checkbox" value="meat" checked> Kött </label>
-						<input type="radio" id="fish" name="checkbox" value="fish" checked> Fisk</label>
-						<input type="radio" id="veg" name="checkbox" value="veg" checked> Vegitarisk </label>
-						<br/>
 					
+					<p>Välj mat alternativ*</p>
+					<p>Fredag</p>
 
-					<label>Fyll i eventuella allergier</label><br/><br/>
+					<input type="radio" id="meat" name="checkboxfriday" value="meat" checked> <label>Kött </label>
+
+					<input type="radio" id="fish" name="checkboxfriday" value="fish" checked> <label>Fisk</label>
+
+					<input type="radio" id="veg" name="checkboxfriday" value="veg" checked required> <label>Vegitarisk </label>
+						<br/>
+
+
+						<p>Lördag</p>
+
+					<input type="radio" id="meat" name="checkboxsaturday" value="meat" checked> <label>Kött </label>
+					<input type="radio" id="fish" name="checkboxsaturday" value="fish" checked> <label>Fisk</label>
+					<input type="radio" id="veg" name="checkboxsaturday" value="veg" checked required> <label>Vegitarisk </label>
+							<br/>
+					
+						<p>Söndag</p>
+
+					<input type="radio" id="meat" name="checkboxsunday" value="meat" checked> <label>Kött </label>
+					<input type="radio" id="fish" name="checkboxsunday" value="fish" checked> <label>Fisk</label>
+
+					<input type="radio" id="veg" name="checkboxsunday" value="veg" checked required> <label>Vegitarisk </label>
+									<br/><br/>
+				
+
+					<label>Fyll i eventuella allergier</label><br/>
 					<input type="text" placeholder="Gluten"> 
 				<button>Anmäl mig</button></form>
 				</div>
@@ -69,10 +86,8 @@
 		</div>
 	</div>
 	<header>
-		
 		<a href="index.html"><img src="/imgs/ProTech-logo-black.png"></a>
 		<nav>
-			<a class="lightgreen" href="index.html">Hem</a>
 			<a class="lightblue" href="event.html">Event</a>
 			<a class="bluegreen" href="http://">Utbildning</a>
 			<a class="blue" href="http://">Om oss</a>
@@ -82,35 +97,91 @@
 <main>
 
 	<div class="container">
-		<div class="Welcome"><h1>Bättre Webb</h1>
-		<h2>Karstads största konferens för frontendutveckling</h2>
-		<h3>Program</h3>
+		<div class="Welcome-text">
+			<h1>Bättre Webb</h1>
+			<h2>Karstads största konferens för frontendutveckling</h2>
+			<h3>Program</h3>
 
-		<p>Fredag 9 december 2022</p></div>
-		<div class="container-day">
-			Frukostmingel 9.00 - 10.00
-			<div class="container-card"> <strong>10.00 - 11.30 Figma masterclass </strong>- Alla smarta tips på hur du kan bli en ninja i Figma</div><br>
-			<div class="container-card"> 11.40 - 12.30 Felicia Grankvist, it-konsult AFRY berättar hur hon helt byttekarriärsbana till tech.</div> LUNCH 12.30 - 13.30 <br>
-			<div class="friday-card3"> 13.30 - 14.30 Sbab kommer och berättar hur dom arbetar med tech och deras innovativa arbete för att skapa den bästa internetbanken.</div><br> FIKA 14.30 -15.00
-			<div class="friday-card4"> 15.00 - 16.00 Tjejer kodar kommer och berättar hur de arbetar med att locka mer tjejer in till techbranchen genom frontendutveckling.</div><br>
+			<p class="head-day">Fredag 9 december 2022</p>
 		</div>
 
-
-		<p class="head-day">Lördag 10 december 2022</p>
 		<div class="container-day">
-			Frukostmingel 9.00-10.00
-			<div class="saturday-card1">10.00 - 11.00 Tailwind CSS - bra eller dåligt?</div><br>
-			<div class="saturday-card2"> 11.10 - 12.00 Bästa sättet att få din sida responsiv - David Andersson fullstackutvecklare/lärare från Zoocom ger de bästa tipsen.</div> <br>LUNCH 12.00-13.00 <br>
-			<div class="saturday-card3"> 13.00 - 14.30 Hur jobbar Google med frontend? - IT-chef Maria Jonsson förklarar.</div> <br>
-			<div class="saturday-card4">Att arbeta remote - träffa Erik Sjögren som spenderar vinterhalvåret i Asien och hör han berätta möjligheterna med att arbeta remote.</div><br>
 			
-		</div>
+			<div>
+				<p>Frukostmingel 9.00 - 10.00</p>
+			</div>
+
+			<div class="friday-card1"> 
+				<p>10.00 - 11.30 <br>
+					Figma masterclass - Alla smarta tips på hur du kan bli en ninja i Figma</p>
+			</div>
+
+			<div class="friday-card2"> 
+				<p>11.40 - 12.30 <br>
+					Felicia Grankvist, it-konsult AFRY berättar hur hon helt byttekarriärsbana till tech.</p>
+			</div> 
+
+			<div>
+				<p>LUNCH 12.30 - 13.30 </p>
+			</div>
+
+			<div class="friday-card3"> 
+				<p>13.30 - 14.30 <br>
+					Sbab kommer och berättar hur dom arbetar med tech och deras innovativa arbete för att skapa den bästa internetbanken.</p>
+			</div> 
+
+			<div>
+				<p>FIKA 14.30 -15.00</p>
+			</div>
+
+			<div class="friday-card4"> 
+				<p>15.00 - 16.00 <br>
+					Tjejer kodar kommer och berättar hur de arbetar med att locka mer tjejer in till techbranchen genom frontendutveckling.</p>
+			</div><br>
+		
+
+
+			<p class="head-day">Lördag 10 december 2022</p>
+		
+			<div><p>Frukostmingel 9.00-10.00</p></div>
+
+			<div class="saturday-card1">
+				<p>10.00 - 11.00 Tailwind CSS - bra eller dåligt?</p>
+			</div>
+
+			<div class="saturday-card2"> 
+				<p>11.10 - 12.00 <br>
+				Bästa sättet att få din sida responsiv - David Andersson fullstackutvecklare/lärare från Zoocom ger de bästa tipsen.</p>
+			</div> 
+			
+			<div><p>LUNCH 12.00-13.00</p></div>
+
+			<div class="saturday-card3"> 
+				<p>13.00 - 14.30 <br>Hur jobbar Google med frontend? - IT-chef Maria Jonsson förklarar.</p></div> 
+
+			<div><p>FIKA 14.30 -15.00</p></div>
+
+			<div class="saturday-card4"> 
+				<p>15.00-16.00 <br>Att arbeta remote - Träffa Erik Sjögren som spenderar vinterhalvåret i Asien och hör han berätta möjligheterna med att arbeta remote.</p></div><br>
+			
+		
 
 		<p class="head-day">Söndag 11 december 2022</p>
-		<div class="container-day">
-			<div class="sunday-card1">9.00 - 10.00 UX-designer Robert Oskarsson berättar hur han skapar de mest användarvänliga hemsidorna</div><br>
-			<div class="sunday-card2"> 10.15 - 12.00 Lars Wingefors VD Embracer group berättar hur hans resa startade samt hur frontend används inom videospelsprogrammering</div> Lunch 12.00 - 13.00
-			<div class="sunday-card3"> 13.15 Avslutning med Tävling och utvärdering av Konferensen samt en överraskning</div> <br>
+
+			<div><p>Frukostmingel 9.00-10.00</p></div>
+
+			<div class="sunday-card1">
+				<p>10.00 - 10.30 <br>UX-designer Robert Oskarsson berättar hur han skapar de mest användarvänliga hemsidorna</p>
+			</div>
+
+			<div class="sunday-card2"> <p>10.45 - 12.00<br> Lars Wingefors VD Embracer group berättar hur hans resa startade samt hur frontend används inom videospelsprogrammering</p>
+			</div> 
+
+			<div><p>Lunch 12.00 - 13.00</p></div>
+
+			<div class="sunday-card3"> 
+				<p>13.15 <br>Avslutning med Tävling och utvärdering av Konferensen samt en överraskning</p>
+			</div> <br>
 		</div>
 
 		<div class="pricecontainer">
