@@ -1,0 +1,440 @@
+@font-face {
+	font-family: Familjen Grotesk;
+	src: url(/Fonts/Familjen_Grotesk/static/FamiljenGrotesk-Regular.ttf);
+}
+
+@font-face {
+	font-family: Teko;
+	src: url(/Fonts/Teko/Teko-Regular.ttf);
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+/* Formulär*/
+
+.container__button__box {
+	text-align: center;
+}
+
+.overlay {
+	position: fixed;
+	top: 0em;
+	bottom: 0em;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.8);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 1;
+	overflow: scroll;
+}
+
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.wrapper {
+	margin: 70px auto;
+	padding: 20px;
+	background: #32797C;
+	border-radius: 10px;
+	width: 80vw;
+	
+	position: relative;
+	transition: all 2s ease-in-out;
+	font-family: 'poppins',sans-serif;
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+	justify-content: space-between;
+	
+}
+
+@media (min-width: 500px){
+	.wrapper {
+		max-width: 410px;
+	}
+}
+
+.wrapper p {
+	margin-top: 0.2;
+	margin-bottom: 0.2;
+	color: white;
+	text-align: left;
+}
+
+.wrapper .close {
+	position: absolute;
+	top: 1px;
+	right: 20px;
+	transition: all 200ms;
+	font-size: 32px;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+
+.wrapper .content {
+	max-height: 30%;
+	overflow: auto;
+}
+
+.container-label {
+	border-radius: 10px;
+	background-color: #32797C;
+	padding: 10px 0;
+	color: white;
+}
+
+form label{
+	font-weight: 500;
+	color: white;
+}
+
+input[type=text] {
+	width: 80%;
+	padding: 12px;
+	border: 1px solid #00C2CB;
+	border-radius: 10px;
+	margin: 0.5em;
+}
+
+input[type=text]:-webkit-autofill {
+	border: 3px solid #7ED957;
+  }
+
+input[type=text]:autofill {
+	border: 3px solid #7ED957;
+  }
+
+
+button {
+	background-color: #B8DCDE;
+	border: #32797C 2px solid;
+	color: #32797C;
+	font-weight: bold;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 16px;
+	text-transform: uppercase;
+	align-self: center;
+	margin: auto;
+	position: relative;
+	left: 8em;
+	box-shadow: 0.1em 0.2em 0.2em #B8DCDE;
+}
+
+button:hover {
+    background-color: #9bd7db;
+}
+
+/* Header */
+
+
+header {
+	background-color: black;
+	max-width: 100%;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	padding-left: 1em;
+	padding-top: 1em;
+	padding-bottom: 0.2em;
+}
+
+.header__img {
+	height: 15vh;
+}
+
+@media (min-width: 554px){
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding-right: 2em;
+
+	}
+}
+
+.header__nav {
+	text-align: center;
+	font-size: 30px;
+	font-family: 'teko', sans-serif;
+	font-weight: bold;
+}
+
+.header__nav a {
+	text-decoration: none;
+	padding: 0.5em;
+	padding-bottom: 0;
+	
+}
+
+
+.nav__link--lightblue {
+	color: #5CE1E6;
+}
+
+.nav__link--lightblue:hover {
+	color: #38B6FF;
+}
+
+.nav__link--bluegreen {
+	color: #00C2CB;
+}
+
+.nav__link--bluegreen:hover {
+	color: #5CE1E6;
+}
+
+.nav__link--blue {
+	color: #38B6FF;
+}
+
+.nav__link--blue:hover {
+	color: #7ED957;
+}
+
+.nav__link--lightgreen {
+	color: #7ED957;
+}
+
+.nav__link--lightgreen:hover {
+	color: #00C2CB;
+}
+/* main content */
+
+main {
+	background-image: url(/imgs/code.png);
+	background-size: cover;
+	padding-bottom: 2em;
+	padding-top: 2em;
+	font-family: 'familjen grotesk';
+	margin: 0px;
+	max-width: 100vw;
+	
+}
+
+/* Event program */
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: black;
+	margin: 0px;
+	max-width: 100vw;
+}
+
+.container p {
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	padding: 1em;
+	margin: 0;
+}
+
+.container__card p {
+	color: #32797C;
+	font-size: 20px;
+	margin: 0em;
+}
+
+.container h1 {
+	margin: 0;
+	font-size: 40px;
+	text-align: center;
+	font-family: 'teko', sans-serif;
+}
+
+.container h2 {
+	font-size: 28px;
+	text-align: center;
+	margin:0;
+}
+
+.container h3 {
+	margin: 0px;
+	padding-top: 1em;
+	font-size: 24px;
+	text-align: center;
+}
+
+.container__card > * {
+	background-color: #B8DCDE;
+	border:#32797C 2px solid;
+	border-radius: 10px;
+	padding: 0em;
+	margin: 1em 1em 0em 1em;
+	color:#32797C;
+	font-size: 20px;
+}
+
+ .container .containter__text--welcome--underheading {
+	background-color: transparent;
+	border: none;
+	color: black;
+	font-size: 24px;
+}
+
+@media (min-width: 1000px){
+
+	.container__card > * {
+		max-width: 50vw;
+	}	
+
+}
+
+
+
+h4 {
+	text-align: center;
+	font-size: 24px;
+	margin: 0px;
+}
+
+.container__price {
+	border: 2px solid #32797C;
+	border-radius: 10px;
+	padding: 1em;
+	margin: 1em 1em 0em 1em;
+	background-color: #B8DCDE;
+}
+
+.container__price p {
+	text-align: left;
+	padding: 0.5;
+	padding-left: 0;
+}
+
+p.container__price__text--small {
+	font-size: 16px;
+	padding: 0px;
+}
+
+.container__button {
+	background-color: #B8DCDE;
+	border: #32797C 2px solid;
+	color: #32797C;
+	font-weight: bold;
+	border-radius: 10px;
+	padding: 0.5em 2em 0.5em 2em;
+	text-align: center;
+	cursor: pointer;
+	font-size: 20px;
+	align-self: center;
+	margin: auto;
+	box-shadow: 0.1em 0.2em 0.2em #B8DCDE;
+	text-decoration: none;
+}
+
+.container__button:hover {
+    background-color: #9bd7db;
+}
+
+
+
+/* Footer*/
+
+footer {
+	background-color: #32797C;
+	width: 100%;
+	color: white;
+	font-family: 'familjen grotesk' ,sans-serif;
+	position: relative;
+	bottom: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	float:left;
+	overflow: hidden;
+	padding:0px;
+	padding-right: 2em;
+}
+
+#footer__content > * {
+	margin:0px;
+}
+
+#footer__content {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	padding: 1em;
+	padding-right: 0px;
+}
+
+#footer__content p {
+	font-size: 18px;
+}
+
+
+.footer__group1 {
+	grid-column: 1 / span 2;
+	grid-row: 3;
+	margin: 0px;
+}
+
+.footer__group1 p {
+	font-size: 16px;
+	padding-right: 1em;
+}
+
+
+.footer__group3 {
+	grid-column: 3;
+	grid-row: 1;
+	padding-bottom: 2em;
+}
+
+.footer__group3 a, .footer__group3 ul {
+	text-decoration: none;
+	list-style-type: none;
+	color: white;
+	text-align: right;
+	margin: 0px;
+	padding-left: 0;
+}
+
+.footer__a--back-top {
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	grid-column: 2;
+	grid-row: 4;
+}
+
+.footer__a--back-top:hover {
+	background-color: white;
+	color:#32797C;
+	font-size: 20px;
+
+}
+
+.footer__img {
+	width: 115px;
+	grid-column: 1;
+}
+
+.footer--line1, .footer--line2 {
+	width: 7em;
+	height: 0;
+	border: 1.5px solid white;
+	background-color: white;
+	margin: 0px;
+	display: inline-block;
+}
+
+.footer__group4 {
+	font-size: 18px;
+	grid-column: 3;
+	grid-row: 3;
+	text-align: right;
+}

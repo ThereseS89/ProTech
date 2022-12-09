@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://kit.fontawesome.com/485f2777b3.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Event</title>
+	<link rel="stylesheet" href="/event.css">
+</head>
+<body>
+
+	<div class="overlay" id="divone">
+		<div class="wrapper">
+			<p><strong>Anmälan till hela helgen</strong><br/>
+				<em>Fyll i dina uppgifter här</em></p>
+			<a href="#" class="close">&times;</a>
+
+			<div class="content">
+				<div class="container-label">
+					<p>Vilka dagar vill du delta?</p>
+					<input type="radio" id="weekend" name="checkbox" value="weekend" checked> <label>Hela helgen </label>
+
+					<input type="radio" id="day" name="checkbox" value="day" > <label>Enstaka dag</label>
+					<br/>
+
+				<div class="chooseday"><p>Välj dagar</p>
+					<input type="checkbox" id="friday" name="friday"> <label for="friday">Fredag</label>  
+				
+					<input type="checkbox" id="saturday" name="saturday"> <label for="saturday"></label>Lördag 
+					
+					<input type="checkbox" id="sunday" name="checkbox"><label for="sunday">Söndag</label> <br><br>
+				</div>	
+					
+					
+
+					<form action="#">
+					<label>Namn*</label>
+					<input type="text" placeholder="Therese Sköld" autocomplete="name" required />
+					
+					<label>Adress*</label>
+					<input type="text" placeholder="karlstadsvägen 23" autocomplete="street-address"  required>
+					
+					<label>Postnummer*</label>
+					<input type="text" placeholder="665 79" minlength="6" autocomplete="postal-code"  required>
+
+					<label>Stad*</label>
+					<input type="text" placeholder="Karlstad" autocomplete="address-level1" required>
+					
+					<label>Telefonnummer*</label>
+					<input type="text" value="" placeholder="0786943170" minlength="8" maxlength="16" autocomplete="tel" required />
+					
+					<label>Mejladress*</label>
+					<input type="text" placeholder="therese.skold@mejl.com" type="email" autocomplete="email" required><br><br>
+
+					
+					<p>Välj mat alternativ*</p>
+					<p>Fredag</p>
+
+					<input type="radio" id="meat" name="checkboxfriday" value="meat" checked> <label>Kött </label>
+
+					<input type="radio" id="fish" name="checkboxfriday" value="fish" checked> <label>Fisk</label>
+
+					<input type="radio" id="veg" name="checkboxfriday" value="veg" checked required> <label>Vegetarisk </label>
+						<br/>
+
+
+						<p>Lördag</p>
+
+					<input type="radio" id="meat" name="checkboxsaturday" value="meat" checked> <label>Kött </label>
+					<input type="radio" id="fish" name="checkboxsaturday" value="fish" checked> <label>Fisk</label>
+					<input type="radio" id="veg" name="checkboxsaturday" value="veg" checked required> <label>Vegetarisk </label>
+							<br/>
+					
+						<p>Söndag</p>
+
+					<input type="radio" id="meat" name="checkboxsunday" value="meat" checked> <label>Kött </label>
+					<input type="radio" id="fish" name="checkboxsunday" value="fish" checked> <label>Fisk</label>
+
+					<input type="radio" id="veg" name="checkboxsunday" value="veg" checked required> <label>Vegetarisk </label>
+									<br/><br/>
+				
+
+					<label>Fyll i eventuella allergier</label><br/>
+					<input type="text" placeholder="Gluten"> 
+				<button>Anmäl mig</button></form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header>
+		
+		<a href="index.html"><img class="header__img" src="/imgs/ProTech-logo-black.png"></a>
+		<nav class="header__nav">
+			<a class="nav__link--lightgreen" href="index.html">Hem</a>
+			<a class="nav__link--lightblue" href="event.html">Event</a>
+			<a class="nav__link--bluegreen" href="#">Utbildning</a>
+			<a class="nav__link--blue" href="#">Om oss</a>
+		</nav>
+	</header>
+
+<main>
+
+	<div class="container">
+		<div class="container__text--Welcome">
+			<h1 class="containter__text--welcome--heading1">Bättre Webb</h1>
+			<h2 class="containter__text--welcome--heading2">Karstads största konferens för frontendutveckling</h2>
+			<h3 class="containter__text--welcome--heading3">Program</h3>
+
+			<p class="containter__text--welcome--underheading">Fredag 9 december 2022</p>
+		</div>
+
+		<div class="container__card">
+			
+			<div class="container__card__div--text">
+				<p class="container__card__text">Frukostmingel 9.00 - 10.00</p>
+			</div>
+
+			<div class="container__card--friday1"> 
+				<p class="container__card__text">10.00 - 11.30 <br>
+					Figma masterclass - Alla smarta tips på hur du kan bli en ninja i Figma</p>
+			</div>
+
+			<div class="container__card--friday2"> 
+				<p class="container__card__text">11.40 - 12.30 <br>
+					Felicia Grankvist, it-konsult AFRY berättar hur hon helt byttekarriärsbana till tech.</p>
+			</div> 
+
+			<div class="container__card__div--text">
+				<p class="container__card__text">LUNCH 12.30 - 13.30 </p>
+			</div>
+
+			<div class="container__card--friday3"> 
+				<p class="container__card__text">13.30 - 14.30 <br>
+					Sbab kommer och berättar hur dom arbetar med tech och deras innovativa arbete för att skapa den bästa internetbanken.</p>
+			</div> 
+
+			<div class="container__card__div--text">
+				<p class="container__card__text">FIKA 14.30 -15.00</p>
+			</div>
+
+			<div class="container__card--friday4"> 
+				<p class="container__card__text">15.00 - 16.00 <br>
+					Tjejer kodar kommer och berättar hur de arbetar med att locka mer tjejer in till techbranchen genom frontendutveckling.</p>
+			</div><br>
+		
+
+
+			<p class="containter__text--welcome--underheading">Lördag 10 december 2022</p>
+		
+			<div class="container__card__div--text"><p class="container__card__text">Frukostmingel 9.00-10.00</p></div>
+
+			<div class="container__card--saturday1">
+				<p class="container__card__text">10.00 - 11.00 Tailwind CSS - bra eller dåligt?</p>
+			</div>
+
+			<div class="container__card--saturday2"> 
+				<p class="container__card__text">11.10 - 12.00 <br>
+				Bästa sättet att få din sida responsiv - David Andersson fullstackutvecklare/lärare från Zoocom ger de bästa tipsen.</p>
+			</div> 
+			
+			<div class="container__card__div--text"><p class="container__card__text">LUNCH 12.00-13.00</p></div>
+
+			<div class="container__card--saturday3"> 
+				<p class="container__card__text">13.00 - 14.30 <br>Hur jobbar Google med frontend? - IT-chef Maria Jonsson förklarar.</p></div> 
+
+			<div class="container__card__div--text"><p class="container__card__text">FIKA 14.30 -15.00</p></div>
+
+			<div class="container__card--saturday4"> 
+				<p class="container__card__text">15.00-16.00 <br>Att arbeta remote - Träffa Erik Sjögren som spenderar vinterhalvåret i Asien och hör han berätta möjligheterna med att arbeta remote.</p></div><br>
+			
+		
+
+		<p class="containter__text--welcome--underheading">Söndag 11 december 2022</p>
+
+			<div class="container__card__div--text"><p class="container__card__text">Frukostmingel 9.00-10.00</p></div>
+
+			<div class="container__card--sunday1">
+				<p class="container__card__text">10.00 - 10.30 <br>UX-designer Robert Oskarsson berättar hur han skapar de mest användarvänliga hemsidorna</p>
+			</div>
+
+			<div class="container__card--sunday2"> <p class="container__card__text">10.45 - 12.00<br> Lars Wingefors VD Embracer group berättar hur hans resa startade samt hur frontend används inom videospelsprogrammering</p>
+			</div> 
+
+			<div class="container__card__div--text"><p class="container__card__text">Lunch 12.00 - 13.00</p></div>
+
+			<div class="container__card--sunday3"> 
+				<p class="container__card__text">13.15 <br>Avslutning med Tävling och utvärdering av Konferensen samt en överraskning</p>
+			</div> <br>
+		</div>
+
+		<div class="container__price">
+			<h4 class="container__price__heading">Prislista</h4>
+
+			<p class="container__price__text">Hela helgen: 1295kr <br> En dag: 395kr</p> 
+			<p class="container__price__text--small"><em>I priset ingår alla seminarier samt lunch och fika.</em></p> <br> 
+			<p class="container__price__text">Anmäl dig till konferensen nedan.</p>
+		</div> <br>
+
+		<div class="container__button__box">
+					<a href="#divone" class="container__button">Anmälan</a>
+		</div>
+
+			
+	</div>
+
+</main>
+
+
+<footer>
+	<div id="footer__content">
+		<img class="footer__img" src="/imgs/ProTech-logo-green.png" alt="Protechlogo">
+
+		<div class="footer__group1">
+			<p class="footer__group1__text">Kontakta oss</p>
+			<span class="footer--line1"></span>
+
+			<p class="footer__group1__text"><strong>ProTech</strong><br>tingvallagatan 28 654 26 Karlstad <br>
+			070-475 69 54 &nbsp; <i class="fa-sharp fa-solid fa-phone"></i> &nbsp; contact@protech.se &nbsp;<i class="fa-solid fa-envelope"></i> </p>
+		</div>
+
+
+		<a href="#top" class="footer__a--back-top"> Back to top</a>
+
+		<div class="footer__group3">
+			<ul>
+				<li><a href="">Hem</a></li>
+				<li><a href="">Om oss</a></li>
+				<li><a href="">Utbildning</a></li>
+				<li><a href="">Events</a></li>
+			
+			</ul>
+		</div>
+
+		<div class="footer__group4"> 
+			<p class="footer__group4__text">Följ oss</p> <span class="footer--line2"></span>
+
+
+			<div class="footer__socialmedia">
+			<i class="fa-brands fa-linkedin-in"></i>      
+			<i class="fa-brands fa-facebook"></i>    
+			<i class="fa-brands fa-youtube"></i>   
+			<i class="fa-brands fa-instagram"></i>
+			</div>
+		</div>
+
+	</div>
+</footer>
+	
+</body>
+</html>
