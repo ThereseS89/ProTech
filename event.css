@@ -16,7 +16,7 @@ body {
 
 /* Formulär*/
 
-.box {
+.container__button__box {
 	text-align: center;
 }
 
@@ -105,6 +105,15 @@ input[type=text] {
 	margin: 0.5em;
 }
 
+input[type=text]:-webkit-autofill {
+	border: 3px solid #7ED957;
+  }
+
+input[type=text]:autofill {
+	border: 3px solid #7ED957;
+  }
+
+
 button {
 	background-color: #B8DCDE;
 	border: #32797C 2px solid;
@@ -141,11 +150,11 @@ header {
 	padding-bottom: 0.2em;
 }
 
-header img {
+.header__img {
 	height: 15vh;
 }
 
-@media (min-width: 486px){
+@media (min-width: 554px){
 	header {
 		display: flex;
 		justify-content: space-between;
@@ -155,39 +164,51 @@ header img {
 	}
 }
 
-nav {
+.header__nav {
 	text-align: center;
 	font-size: 30px;
 	font-family: 'teko', sans-serif;
 	font-weight: bold;
 }
 
-nav a:hover {
-	color: black;
-}
-
-nav a {
+.header__nav a {
 	text-decoration: none;
 	padding: 0.5em;
 	padding-bottom: 0;
 	
 }
 
-.lightblue {
+
+.nav__link--lightblue {
 	color: #5CE1E6;
 }
 
-
-.bluegreen {
-	color: #00C2CB;
-}
-
-.blue {
+.nav__link--lightblue:hover {
 	color: #38B6FF;
 }
 
-.lightgreen {
+.nav__link--bluegreen {
+	color: #00C2CB;
+}
+
+.nav__link--bluegreen:hover {
+	color: #5CE1E6;
+}
+
+.nav__link--blue {
+	color: #38B6FF;
+}
+
+.nav__link--blue:hover {
 	color: #7ED957;
+}
+
+.nav__link--lightgreen {
+	color: #7ED957;
+}
+
+.nav__link--lightgreen:hover {
+	color: #00C2CB;
 }
 /* main content */
 
@@ -221,7 +242,7 @@ main {
 	margin: 0;
 }
 
-.container-day p {
+.container__card p {
 	color: #32797C;
 	font-size: 20px;
 	margin: 0em;
@@ -247,17 +268,17 @@ main {
 	text-align: center;
 }
 
-.container-day > * {
+.container__card > * {
 	background-color: #B8DCDE;
 	border:#32797C 2px solid;
 	border-radius: 10px;
-	padding: 1em;
-	margin: 1em;
+	padding: 0em;
+	margin: 1em 1em 0em 1em;
 	color:#32797C;
 	font-size: 20px;
 }
 
- .container .head-day {
+ .container .containter__text--welcome--underheading {
 	background-color: transparent;
 	border: none;
 	color: black;
@@ -266,7 +287,7 @@ main {
 
 @media (min-width: 1000px){
 
-	.container-day > * {
+	.container__card > * {
 		max-width: 50vw;
 	}	
 
@@ -280,33 +301,32 @@ h4 {
 	margin: 0px;
 }
 
-.pricecontainer {
+.container__price {
 	border: 2px solid #32797C;
 	border-radius: 10px;
 	padding: 1em;
-	margin-bottom: 1em;
+	margin: 1em 1em 0em 1em;
 	background-color: #B8DCDE;
 }
 
-.pricecontainer p {
+.container__price p {
 	text-align: left;
 	padding: 0.5;
 	padding-left: 0;
 }
 
-p.pricecontainer__text {
+p.container__price__text--small {
 	font-size: 16px;
 	padding: 0px;
 }
 
-.button {
+.container__button {
 	background-color: #B8DCDE;
 	border: #32797C 2px solid;
 	color: #32797C;
 	font-weight: bold;
 	border-radius: 10px;
 	padding: 0.5em 2em 0.5em 2em;
-
 	text-align: center;
 	cursor: pointer;
 	font-size: 20px;
@@ -314,6 +334,10 @@ p.pricecontainer__text {
 	margin: auto;
 	box-shadow: 0.1em 0.2em 0.2em #B8DCDE;
 	text-decoration: none;
+}
+
+.container__button:hover {
+    background-color: #9bd7db;
 }
 
 
@@ -335,11 +359,11 @@ footer {
 	padding-right: 2em;
 }
 
-#footer-content > * {
+#footer__content > * {
 	margin:0px;
 }
 
-#footer-content {
+#footer__content {
 	display: grid;
 	grid-template-columns: auto auto auto;
 	grid-template-rows: auto auto auto;
@@ -347,30 +371,30 @@ footer {
 	padding-right: 0px;
 }
 
-#footer-content p {
+#footer__content p {
 	font-size: 18px;
 }
 
 
-.footer-group1 {
+.footer__group1 {
 	grid-column: 1 / span 2;
 	grid-row: 3;
 	margin: 0px;
 }
 
-.footer-group1 p {
+.footer__group1 p {
 	font-size: 16px;
 	padding-right: 1em;
 }
 
 
-.footer-group3 {
+.footer__group3 {
 	grid-column: 3;
 	grid-row: 1;
 	padding-bottom: 2em;
 }
 
-.footer-group3 a, .footer-group3 ul {
+.footer__group3 a, .footer__group3 ul {
 	text-decoration: none;
 	list-style-type: none;
 	color: white;
@@ -379,7 +403,7 @@ footer {
 	padding-left: 0;
 }
 
-.back-top {
+.footer__a--back-top {
 	color: white;
 	text-align: center;
 	text-decoration: none;
@@ -387,12 +411,19 @@ footer {
 	grid-row: 4;
 }
 
-footer img {
+.footer__a--back-top:hover {
+	background-color: white;
+	color:#32797C;
+	font-size: 20px;
+
+}
+
+.footer__img {
 	width: 115px;
 	grid-column: 1;
 }
 
-.line1, .line2 {
+.footer--line1, .footer--line2 {
 	width: 7em;
 	height: 0;
 	border: 1.5px solid white;
@@ -401,7 +432,7 @@ footer img {
 	display: inline-block;
 }
 
-.footer-group4 {
+.footer__group4 {
 	font-size: 18px;
 	grid-column: 3;
 	grid-row: 3;

@@ -20,35 +20,38 @@
 				<div class="container-label">
 					<p>Vilka dagar vill du delta?</p>
 					<input type="radio" id="weekend" name="checkbox" value="weekend" checked> <label>Hela helgen </label>
-					<input type="radio" id="day" name="checkbox" value="day" checked> <label>Enstaka dag</label>
+
+					<input type="radio" id="day" name="checkbox" value="day" > <label>Enstaka dag</label>
 					<br/>
-					
-					<p>Välj dagar</p>
+
+				<div class="chooseday"><p>Välj dagar</p>
 					<input type="checkbox" id="friday" name="friday"> <label for="friday">Fredag</label>  
 				
 					<input type="checkbox" id="saturday" name="saturday"> <label for="saturday"></label>Lördag 
 					
 					<input type="checkbox" id="sunday" name="checkbox"><label for="sunday">Söndag</label> <br><br>
+				</div>	
+					
 					
 
 					<form action="#">
 					<label>Namn*</label>
-					<input type="text" placeholder="Therese Sköld" required />
+					<input type="text" placeholder="Therese Sköld" autocomplete="name" required />
 					
 					<label>Adress*</label>
-					<input type="text" placeholder="karlstadsvägen 23" required>
+					<input type="text" placeholder="karlstadsvägen 23" autocomplete="street-address"  required>
 					
 					<label>Postnummer*</label>
-					<input type="text" placeholder="665 79" required>
+					<input type="text" placeholder="665 79" minlength="6" autocomplete="postal-code"  required>
 
 					<label>Stad*</label>
-					<input type="text" placeholder="Karlstad" required>
+					<input type="text" placeholder="Karlstad" autocomplete="address-level1" required>
 					
 					<label>Telefonnummer*</label>
-					<input type="text" value="" placeholder="0786943170" minlength="8" maxlength="16" required />
+					<input type="text" value="" placeholder="0786943170" minlength="8" maxlength="16" autocomplete="tel" required />
 					
 					<label>Mejladress*</label>
-					<input type="text" placeholder="therese.skold@mejl.com" required><br><br>
+					<input type="text" placeholder="therese.skold@mejl.com" type="email" autocomplete="email" required><br><br>
 
 					
 					<p>Välj mat alternativ*</p>
@@ -58,7 +61,7 @@
 
 					<input type="radio" id="fish" name="checkboxfriday" value="fish" checked> <label>Fisk</label>
 
-					<input type="radio" id="veg" name="checkboxfriday" value="veg" checked required> <label>Vegitarisk </label>
+					<input type="radio" id="veg" name="checkboxfriday" value="veg" checked required> <label>Vegetarisk </label>
 						<br/>
 
 
@@ -66,7 +69,7 @@
 
 					<input type="radio" id="meat" name="checkboxsaturday" value="meat" checked> <label>Kött </label>
 					<input type="radio" id="fish" name="checkboxsaturday" value="fish" checked> <label>Fisk</label>
-					<input type="radio" id="veg" name="checkboxsaturday" value="veg" checked required> <label>Vegitarisk </label>
+					<input type="radio" id="veg" name="checkboxsaturday" value="veg" checked required> <label>Vegetarisk </label>
 							<br/>
 					
 						<p>Söndag</p>
@@ -74,7 +77,7 @@
 					<input type="radio" id="meat" name="checkboxsunday" value="meat" checked> <label>Kött </label>
 					<input type="radio" id="fish" name="checkboxsunday" value="fish" checked> <label>Fisk</label>
 
-					<input type="radio" id="veg" name="checkboxsunday" value="veg" checked required> <label>Vegitarisk </label>
+					<input type="radio" id="veg" name="checkboxsunday" value="veg" checked required> <label>Vegetarisk </label>
 									<br/><br/>
 				
 
@@ -86,114 +89,116 @@
 		</div>
 	</div>
 	<header>
-		<a href="index.html"><img src="/imgs/ProTech-logo-black.png"></a>
-		<nav>
-			<a class="lightblue" href="event.html">Event</a>
-			<a class="bluegreen" href="http://">Utbildning</a>
-			<a class="blue" href="http://">Om oss</a>
+		
+		<a href="index.html"><img class="header__img" src="/imgs/ProTech-logo-black.png"></a>
+		<nav class="header__nav">
+			<a class="nav__link--lightgreen" href="index.html">Hem</a>
+			<a class="nav__link--lightblue" href="event.html">Event</a>
+			<a class="nav__link--bluegreen" href="#">Utbildning</a>
+			<a class="nav__link--blue" href="#">Om oss</a>
 		</nav>
 	</header>
 
 <main>
 
 	<div class="container">
-		<div class="Welcome-text">
-			<h1>Bättre Webb</h1>
-			<h2>Karstads största konferens för frontendutveckling</h2>
-			<h3>Program</h3>
+		<div class="container__text--Welcome">
+			<h1 class="containter__text--welcome--heading1">Bättre Webb</h1>
+			<h2 class="containter__text--welcome--heading2">Karstads största konferens för frontendutveckling</h2>
+			<h3 class="containter__text--welcome--heading3">Program</h3>
 
-			<p class="head-day">Fredag 9 december 2022</p>
+			<p class="containter__text--welcome--underheading">Fredag 9 december 2022</p>
 		</div>
 
-		<div class="container-day">
+		<div class="container__card">
 			
-			<div>
-				<p>Frukostmingel 9.00 - 10.00</p>
+			<div class="container__card__div--text">
+				<p class="container__card__text">Frukostmingel 9.00 - 10.00</p>
 			</div>
 
-			<div class="friday-card1"> 
-				<p>10.00 - 11.30 <br>
+			<div class="container__card--friday1"> 
+				<p class="container__card__text">10.00 - 11.30 <br>
 					Figma masterclass - Alla smarta tips på hur du kan bli en ninja i Figma</p>
 			</div>
 
-			<div class="friday-card2"> 
-				<p>11.40 - 12.30 <br>
+			<div class="container__card--friday2"> 
+				<p class="container__card__text">11.40 - 12.30 <br>
 					Felicia Grankvist, it-konsult AFRY berättar hur hon helt byttekarriärsbana till tech.</p>
 			</div> 
 
-			<div>
-				<p>LUNCH 12.30 - 13.30 </p>
+			<div class="container__card__div--text">
+				<p class="container__card__text">LUNCH 12.30 - 13.30 </p>
 			</div>
 
-			<div class="friday-card3"> 
-				<p>13.30 - 14.30 <br>
+			<div class="container__card--friday3"> 
+				<p class="container__card__text">13.30 - 14.30 <br>
 					Sbab kommer och berättar hur dom arbetar med tech och deras innovativa arbete för att skapa den bästa internetbanken.</p>
 			</div> 
 
-			<div>
-				<p>FIKA 14.30 -15.00</p>
+			<div class="container__card__div--text">
+				<p class="container__card__text">FIKA 14.30 -15.00</p>
 			</div>
 
-			<div class="friday-card4"> 
-				<p>15.00 - 16.00 <br>
+			<div class="container__card--friday4"> 
+				<p class="container__card__text">15.00 - 16.00 <br>
 					Tjejer kodar kommer och berättar hur de arbetar med att locka mer tjejer in till techbranchen genom frontendutveckling.</p>
 			</div><br>
 		
 
 
-			<p class="head-day">Lördag 10 december 2022</p>
+			<p class="containter__text--welcome--underheading">Lördag 10 december 2022</p>
 		
-			<div><p>Frukostmingel 9.00-10.00</p></div>
+			<div class="container__card__div--text"><p class="container__card__text">Frukostmingel 9.00-10.00</p></div>
 
-			<div class="saturday-card1">
-				<p>10.00 - 11.00 Tailwind CSS - bra eller dåligt?</p>
+			<div class="container__card--saturday1">
+				<p class="container__card__text">10.00 - 11.00 Tailwind CSS - bra eller dåligt?</p>
 			</div>
 
-			<div class="saturday-card2"> 
-				<p>11.10 - 12.00 <br>
+			<div class="container__card--saturday2"> 
+				<p class="container__card__text">11.10 - 12.00 <br>
 				Bästa sättet att få din sida responsiv - David Andersson fullstackutvecklare/lärare från Zoocom ger de bästa tipsen.</p>
 			</div> 
 			
-			<div><p>LUNCH 12.00-13.00</p></div>
+			<div class="container__card__div--text"><p class="container__card__text">LUNCH 12.00-13.00</p></div>
 
-			<div class="saturday-card3"> 
-				<p>13.00 - 14.30 <br>Hur jobbar Google med frontend? - IT-chef Maria Jonsson förklarar.</p></div> 
+			<div class="container__card--saturday3"> 
+				<p class="container__card__text">13.00 - 14.30 <br>Hur jobbar Google med frontend? - IT-chef Maria Jonsson förklarar.</p></div> 
 
-			<div><p>FIKA 14.30 -15.00</p></div>
+			<div class="container__card__div--text"><p class="container__card__text">FIKA 14.30 -15.00</p></div>
 
-			<div class="saturday-card4"> 
-				<p>15.00-16.00 <br>Att arbeta remote - Träffa Erik Sjögren som spenderar vinterhalvåret i Asien och hör han berätta möjligheterna med att arbeta remote.</p></div><br>
+			<div class="container__card--saturday4"> 
+				<p class="container__card__text">15.00-16.00 <br>Att arbeta remote - Träffa Erik Sjögren som spenderar vinterhalvåret i Asien och hör han berätta möjligheterna med att arbeta remote.</p></div><br>
 			
 		
 
-		<p class="head-day">Söndag 11 december 2022</p>
+		<p class="containter__text--welcome--underheading">Söndag 11 december 2022</p>
 
-			<div><p>Frukostmingel 9.00-10.00</p></div>
+			<div class="container__card__div--text"><p class="container__card__text">Frukostmingel 9.00-10.00</p></div>
 
-			<div class="sunday-card1">
-				<p>10.00 - 10.30 <br>UX-designer Robert Oskarsson berättar hur han skapar de mest användarvänliga hemsidorna</p>
+			<div class="container__card--sunday1">
+				<p class="container__card__text">10.00 - 10.30 <br>UX-designer Robert Oskarsson berättar hur han skapar de mest användarvänliga hemsidorna</p>
 			</div>
 
-			<div class="sunday-card2"> <p>10.45 - 12.00<br> Lars Wingefors VD Embracer group berättar hur hans resa startade samt hur frontend används inom videospelsprogrammering</p>
+			<div class="container__card--sunday2"> <p class="container__card__text">10.45 - 12.00<br> Lars Wingefors VD Embracer group berättar hur hans resa startade samt hur frontend används inom videospelsprogrammering</p>
 			</div> 
 
-			<div><p>Lunch 12.00 - 13.00</p></div>
+			<div class="container__card__div--text"><p class="container__card__text">Lunch 12.00 - 13.00</p></div>
 
-			<div class="sunday-card3"> 
-				<p>13.15 <br>Avslutning med Tävling och utvärdering av Konferensen samt en överraskning</p>
+			<div class="container__card--sunday3"> 
+				<p class="container__card__text">13.15 <br>Avslutning med Tävling och utvärdering av Konferensen samt en överraskning</p>
 			</div> <br>
 		</div>
 
-		<div class="pricecontainer">
-			<h4>Prislista</h4>
+		<div class="container__price">
+			<h4 class="container__price__heading">Prislista</h4>
 
-			<p>Hela helgen: 1295kr <br> En dag: 395kr</p> 
-			<p class="pricecontainer__text"><em>I priset ingår alla seminarier samt lunch och fika.</em></p> <br> 
-			<p>Anmäl dig till konferensen nedan.</p>
+			<p class="container__price__text">Hela helgen: 1295kr <br> En dag: 395kr</p> 
+			<p class="container__price__text--small"><em>I priset ingår alla seminarier samt lunch och fika.</em></p> <br> 
+			<p class="container__price__text">Anmäl dig till konferensen nedan.</p>
 		</div> <br>
 
-		<div class="box">
-					<a href="#divone" class="button">Anmälan</a>
+		<div class="container__button__box">
+					<a href="#divone" class="container__button">Anmälan</a>
 		</div>
 
 			
@@ -203,21 +208,21 @@
 
 
 <footer>
-	<div id="footer-content">
-		<img src="/imgs/ProTech-logo-green.png" alt="Protechlogo">
+	<div id="footer__content">
+		<img class="footer__img" src="/imgs/ProTech-logo-green.png" alt="Protechlogo">
 
-		<div class="footer-group1">
-			<p>Kontakta oss</p>
-			<span class="line1"></span>
+		<div class="footer__group1">
+			<p class="footer__group1__text">Kontakta oss</p>
+			<span class="footer--line1"></span>
 
-			<p><strong>ProTech</strong><br>tingvallagatan 28 654 26 Karlstad <br>
+			<p class="footer__group1__text"><strong>ProTech</strong><br>tingvallagatan 28 654 26 Karlstad <br>
 			070-475 69 54 &nbsp; <i class="fa-sharp fa-solid fa-phone"></i> &nbsp; contact@protech.se &nbsp;<i class="fa-solid fa-envelope"></i> </p>
 		</div>
 
 
-		<a href="#top" class="back-top"> Back to top</a>
+		<a href="#top" class="footer__a--back-top"> Back to top</a>
 
-		<div class="footer-group3">
+		<div class="footer__group3">
 			<ul>
 				<li><a href="">Hem</a></li>
 				<li><a href="">Om oss</a></li>
@@ -227,11 +232,11 @@
 			</ul>
 		</div>
 
-		<div class="footer-group4"> 
-			<p>Följ oss</p> <span class="line2"></span>
+		<div class="footer__group4"> 
+			<p class="footer__group4__text">Följ oss</p> <span class="footer--line2"></span>
 
 
-			<div class="socialmedia">
+			<div class="footer__socialmedia">
 			<i class="fa-brands fa-linkedin-in"></i>      
 			<i class="fa-brands fa-facebook"></i>    
 			<i class="fa-brands fa-youtube"></i>   
